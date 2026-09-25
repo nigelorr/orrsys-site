@@ -93,10 +93,9 @@ Email support is free of charge- contact <a href="mailto:web_14enquiry_at_orrsys
 <form action="https://api.staticforms.dev/submit" method="POST">
   <input type="hidden" name="apiKey" value="sf_c7cfce9f970806db2ea6857f" />
   <input type="hidden" name="subject" value="Orr Systems website contact form enquiry" />
-  <input type="hidden" name="redirect" value="http://www.orrsys.co.uk/church/form_sent.html">
-  <input type="hidden" name="sort" value="order:name,email,phone,message">
-  <input type="hidden" name="required" value="email,phone">
-
+  <input type="hidden" name="redirectTo" value="http://www.orrsys.co.uk/church/form_sent.html">
+  <input type="text" name="honeypot" style="display:none">
+  
   <label>Name
     <input type="text" name="name" required />
   </label>
