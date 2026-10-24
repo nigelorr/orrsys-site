@@ -81,16 +81,24 @@
     <div id="main-copy">
 <h1 id="email">Email us</h1>
 <p>
-Email support is free of charge- contact <a href="mailto:web_14enquiry_at_orrsys.co.uk" title="our email">web_enquiry_at_orrsys.co.uk (replace _at_ with @ for genuine enquiries)</a>.  Please don't store this address, for anti-spam reasons it needs to be changed regularly, once we are in contact you will get a permanent address to contact us!</p>
+Email support is free of charge- contact <a href="mailto:web_26enquiry_at_orrsys.co.uk" title="our email">web_enquiry_at_orrsys.co.uk (replace _at_ with @ for genuine enquiries)</a>.  Please don't store this address, for anti-spam reasons it may be changed regularly, once we are in contact you will get a permanent address to contact us!</p>
 
 <h2 id="form">Contact Form</h2>
-<p>Fill in your details and we will get in touch.  Note that these details will not be sold or shared, or used for any purpose except for replying to your enquiry.</p>
+<p>Fill in your details and we will get in touch. These details will only be used to make initial contact in response to your enquiry.</p>
 <p>To ensure that we have some way of contacting you, please enter your contact details carefully.  The form will only be accepted if you enter something for phone and email.  If you only want to give us one of these for contact, just enter '1' in the other field!</p>
 
+<div id="my-form"></div>
+<script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    StaticForms.render(
+      document.getElementById('my-form'),
+      'sf_c7cfce9f970806db2ea6857f'
+    );
+  });
+</script>
 
-
-
-<form action="https://api.staticforms.dev/submit" method="POST">
+<!-- <form action="https://api.staticforms.dev/submit" method="POST">
   <input type="hidden" name="apiKey" value="sf_c7cfce9f970806db2ea6857f" />
   <input type="hidden" name="subject" value="Orr Systems website contact form enquiry" />
   <input type="hidden" name="redirectTo" value="http://www.orrsys.co.uk/church/form_sent.html">
@@ -113,7 +121,7 @@ Email support is free of charge- contact <a href="mailto:web_14enquiry_at_orrsys
   </label>
 
   <button type="submit">Send</button>
-</form>
+</form> -->
 
 
 <h2 id="urgent">Urgent Support by phone</h2>
